@@ -1,12 +1,12 @@
 import * as React from "react";
 import { makeID } from "./utils";
 
-export function Input({ onTodoAdd }) {
+export function Input({ add }) {
     let [value, setValue] = React.useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
-        onTodoAdd({ id: makeID(), value });
+        add({ id: makeID(), value });
         setValue("");
     }
 
@@ -17,7 +17,7 @@ export function Input({ onTodoAdd }) {
                 placeholder="Add a new task..."
                 className="px-4 py-2 border rounded-md text-sm flex-1"
                 value={value}
-                onChange={(event) => setValue(event.target.value)}
+                onInput={(event) => setValue(event.target.value)}
             />
             <button className="px-4 py-2 bg-black rounded-md text-sm font-medium text-white">
                 Add
