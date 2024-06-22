@@ -10,7 +10,7 @@ export function Item({ todo, remove, edit }) {
     }
 
     return (
-        <li className="border px-4 py-2 shadow-sm rounded-md flex gap-2">
+        <li className="border px-4 py-2 shadow-sm rounded-md flex gap-2 focus-within:border-blue-500">
             <input
                 value={value}
                 onInput={(event) => setValue(event.target.value)}
