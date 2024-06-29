@@ -19,7 +19,7 @@ export function Input({ add }) {
                 value={value}
                 onInput={(event) => setValue(event.target.value)}
             />
-            <button className="px-4 py-2 bg-black rounded-md text-sm font-medium text-white">
+            <button className="px-4 py-2 bg-[#61DBFB] text-black rounded-md text-sm font-medium">
                 Add
             </button>
         </form>

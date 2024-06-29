@@ -29,7 +29,7 @@ export function App() {
 
     return (
         <div className="pt-16 max-w-sm mx-auto grid gap-6">
-            <h1 className="font-bold text-3xl pb-2">Todo List</h1>
+            <h1 className="font-bold text-3xl pb-2">Todo Demo React.js</h1>
             <Input add={add} />
             <List todos={todos} remove={remove} edit={edit} />
         </div>
